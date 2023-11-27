@@ -19,10 +19,16 @@
     "lint:prettier": "prettier --write \"{src,tests,types}/**/*.{vue,js,jsx,ts,tsx,json,css,less,scss,html,md}\"",
     "lint": "pnpm lint:eslint && pnpm lint:prettier",
     "prepare": "husky install",
-    "test": "vitest"
+    "test": "vitest",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
     "@element-plus/icons-vue": "2.1.0",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "unplugin-vue-components": "^0.25.2",
+    "vitepress": "1.0.0-alpha.75",
     "axios": "1.4.0",
     "dayjs": "1.11.8",
     "element-plus": "2.3.7",
