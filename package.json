@@ -19,6 +19,7 @@
     "lint:prettier": "prettier --write \"{src,tests,types}/**/*.{vue,js,jsx,ts,tsx,json,css,less,scss,html,md}\"",
     "lint": "pnpm lint:eslint && pnpm lint:prettier",
     "prepare": "husky install",
+    "deploy": "deploy.sh",
     "test": "vitest",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
