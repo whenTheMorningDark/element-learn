@@ -1,7 +1,7 @@
 <template>
   <el-row class="mb-4">
     <el-button>Default</el-button>
-    <el-button type="primary">Primary1</el-button>
+    <el-button type="primary">Primary12</el-button>
     <el-button type="success">Succes1s</el-button>
     <el-button type="info">Info</el-button>
     <el-button type="warning">Warninwg</el-button>
