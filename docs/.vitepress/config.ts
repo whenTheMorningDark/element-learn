@@ -4,7 +4,7 @@ export default defineConfig({
   title: '基于Element-plus基础组件',
   description: '基于Element-plus基础组件',
   lang: 'cn-ZH',
-  base: '/',
+  base: '/element-learn/',
   lastUpdated: true,
   themeConfig: {
     siteTitle: 'element文档解析',
