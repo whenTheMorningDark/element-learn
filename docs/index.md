@@ -1,4 +1,0 @@
-
-<ClientOnly>
-  <VpApp/>
-</ClientOnly>
