@@ -9,7 +9,7 @@ import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 import { VPDemo } from '../vitepress'
 // 基于element-plus二次封装基础组件
-// import TuiPlus from '../../../packages'
+import TuiPlus from '../../../packages/index'
 import '../../public/css/index.css'
 
 export default {
@@ -25,7 +25,7 @@ export default {
       ctx.app.component(key, component)
     }
     // 全局注册基础组件
-    // ctx.app.use(TuiPlus)
+    ctx.app.use(TuiPlus)
 
     ctx.app.component('Demo', VPDemo)
   },
