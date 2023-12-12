@@ -1,3 +1,8 @@
 <template>
-  <div>buttonaaa</div>
+  <component :is="tag" />
 </template>
+<script setup lang="ts">
+defineOptions({
+  name: "KButton",
+});
+</script>

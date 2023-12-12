@@ -1,5 +1,5 @@
 <template>
-  <TButton />
+  <KButton />
 </template>
 
 <script lang="ts" setup>
