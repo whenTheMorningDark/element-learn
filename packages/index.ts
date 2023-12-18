@@ -1,9 +1,11 @@
 import type { Component, App } from "vue";
 import KButton from "./components/button";
+import KlImage from "./components/image";
 const components: {
   [propName: string]: Component;
 } = {
   KButton,
+  KlImage,
 };
 const installComponents: any = (app: App) => {
   for (const key in components) {

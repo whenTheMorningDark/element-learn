@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" />
+  <div>123</div>
 </template>
 <script setup lang="ts">
 defineOptions({

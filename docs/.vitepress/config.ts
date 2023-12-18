@@ -17,7 +17,8 @@ export default defineConfig({
     ],
     sidebar: {
       '/components': [
-        { text: '按钮', link: '/components/button.md' }
+        { text: '按钮', link: '/components/button.md' },
+        {text:"图片",link:"/components/image.md"},
       ],
     },
   },
