@@ -2,10 +2,12 @@ import { ref, onMounted, watch } from "vue";
 import type { imageProps } from "./image";
 const useImage = (props: imageProps) => {
   const imageSrc = ref<string | undefined>();
+  const showViewer = ref(false);
   const hasLoadError = ref(false);
   const isLoading = ref(true);
   const handleClick = () => {
     console.log("处理点击情况");
+    showViewer.value = true;
   };
 
   const loadImage = () => {
@@ -33,8 +35,9 @@ const useImage = (props: imageProps) => {
   return {
     imageSrc,
     hasLoadError,
-    loadImage,
     isLoading,
+    showViewer,
+    loadImage,
     handleClick,
     handleError,
     handleLoad,

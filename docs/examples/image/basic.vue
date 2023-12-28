@@ -10,6 +10,6 @@ onMounted(() => {
   setTimeout(() => {
     src.value =
       "https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg";
-  }, 2000000);
+  }, 1000);
 });
 </script>

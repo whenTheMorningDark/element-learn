@@ -16,21 +16,24 @@
         <div class="kl-iamge_placeholder">加载中...</div>
       </div>
     </template>
+    <imageViewer v-if="showViewer" />
   </div>
 </template>
 <script setup lang="ts">
 import { imageProps } from "./image";
 import { useImage } from "./useImage";
+import imageViewer from "./image-viewer.vue";
 defineOptions({
   name: "KLImage",
 });
 const props = defineProps(imageProps);
 const {
   imageSrc,
-  handleClick,
+  showViewer,
   hasLoadError,
-  handleError,
   isLoading,
+  handleError,
+  handleClick,
   handleLoad,
 } = useImage(props);
 </script>
