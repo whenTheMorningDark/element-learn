@@ -16,7 +16,7 @@
         <div class="kl-iamge_placeholder">加载中...</div>
       </div>
     </template>
-    <imageViewer v-if="showViewer" />
+    <imageViewer v-if="showViewer" @close="closeViewer" />
   </div>
 </template>
 <script setup lang="ts">
@@ -35,6 +35,7 @@ const {
   handleError,
   handleClick,
   handleLoad,
+  closeViewer,
 } = useImage(props);
 </script>
 <style scoped lang="scss">

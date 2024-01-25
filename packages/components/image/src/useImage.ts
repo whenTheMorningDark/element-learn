@@ -23,6 +23,9 @@ const useImage = (props: imageProps) => {
     isLoading.value = false;
     hasLoadError.value = false;
   };
+  const closeViewer = () => {
+    showViewer.value = false;
+  };
   watch(
     () => props.src,
     () => {
@@ -41,6 +44,7 @@ const useImage = (props: imageProps) => {
     handleClick,
     handleError,
     handleLoad,
+    closeViewer,
   };
 };
 

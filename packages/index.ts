@@ -1,4 +1,5 @@
 import type { Component, App } from "vue";
+import "./style/icon/iconfont.css";
 import KButton from "./components/button";
 import KlImage from "./components/image";
 const components: {
